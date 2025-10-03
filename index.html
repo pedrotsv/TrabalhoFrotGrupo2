@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Turismo em Petrópolis</title>
+  <!-- Link para arquivo CSS externo que contém as regras de estilo da página -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Link da biblioteca Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+  <!-- Início do corpo da página - aqui fica todo o conteúdo visível -->
+  <header class="main-header">
+    <!-- Menu de navegação -->
+    <nav>
+      <!-- Lista não ordenada para criar o menu -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#guias">Guias Gastronômico</a></li>
+        <li><a href="#leste">Área Leste</a></li>
+        <li><a href="#oeste">Área Oeste</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal da página -->
+  <main>
+    <!-- Caixa com o Bem vindo - Homepage -->
+    <section id="home">
+      <div class="home-text">
+        <h1>Bem-vindo a Petrópolis</h1>
+        <p>A Cidade Imperial te espera com suas belezas históricas e naturais</p>
+      </div>
+    </section>
+    
+    <Guias Turísticos -->
+
+      <section id="guias" class="content-section">
+        <h2>Guias Gastronômico</h2>
+
+        <!-- Container que agrupa todos os cards desta seção -->
+        <div class="cards-container">
+
+          <!-- Bloco Bordeaux -->
+          <div class="card">
+            <img src="./img/restaurante.jpg" alt="Bordeaux" />
+            <h3>Bordeaux</h3>
+            <p>
+              Desde 1997 referência em boa gastronomia, vinhos selecionados e ambiente acolhedor — ideal pra momentos
+              especiais ou pra relaxar no fim do dia.
+            </p>
+          </div>
+
+          <!-- Bloco LagoSul -->
+          <div class="card">
+            <img src="./img/guia-gastronomia.jpg" alt="Prato de comida em um restaurante" />
+            <h3>Lago Sul</h3>
+            <p>
+              Descubra os sabores da serra, com restaurantes charmosos,
+              chocolaterias artesanais e as famosas cervejarias da região.
+            </p>
+          </div>
+
+          <!-- Bloco Baixo Itaipava -->
+          <div class="card">
+            <img src="./img/baixo.jpg" alt="Baixo Itaipava" />
+            <h3>Baixo Itaipava</h3>
+            <p>
+              Espaço elegante e descontraído que reúne restaurantes
+              sofisticados, bistrôs charmosos, lojas de decoração e música ao vivo, tudo sob o mesmo céu da serra.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pontos Turísticos da Área Leste  -->
+      <section id="leste" class="content-section">
+        <h2>Pontos Turísticos: Área Leste</h2>
+
+        <!-- Bloco Museu Imperial -->
+        <div class="cards-container">
+          <!-- Card: Museu Imperial -->
+          <div class="card">
+            <img src="./img/museu-imperial.jpg" alt="Museu Imperial" />
+            <h3>Museu Imperial</h3>
+            <p>
+              Antiga residência de verão do Imperador D. Pedro II, hoje é um dos
+              museus mais importantes do Brasil.
+            </p>
+          </div>
+
+          <!-- Bloco Palácio de Cristal -->
+          <div class="card">
+            <img src="./img/palacio-de-cristal.jpg" alt="Palácio de Cristal" />
+            <h3>Palácio de Cristal</h3>
+            <p>
+              Uma estrutura de vidro e aço inspirada em palácios europeus, palco
+              de exposições e eventos.
+            </p>
+          </div>
+
+          <!-- Bloco Catedral -->
+          <div class="card">
+            <img src="./img/catedral-petropolis.jpg" alt="Catedral São Pedro de Alcântara" />
+            <h3>Catedral São Pedro de Alcântara</h3>
+            <p>
+              De arquitetura neogótica, abriga o Mausoléu Imperial com os restos
+              mortais da família imperial.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pontos Turísticos da Área Oeste -->
+      <section id="oeste" class="content-section">
+        <h2>Pontos Turísticos: Área Oeste</h2>
+
+        <div class="cards-container">
+          <!-- Bloco Parque Nacional da Serra dos Órgãos -->
+          <div class="card">
+            <img src="./img/parque-nacional.jpg" alt="Vista da Serra dos Órgãos" />
+            <h3>Parque Nacional da Serra dos Órgãos</h3>
+            <p>
+              Ideal para os amantes da natureza, com trilhas, cachoeiras e
+              paisagens deslumbrantes.
+            </p>
+          </div>
+
+          <!-- Bloco  Véu da Noiva -->
+          <div class="card">
+            <img src="./img/veu-da-noiva.jpg" alt="Cachoeira Véu da Noiva" />
+            <h3>Cascata do Véu da Noiva</h3>
+            <p>
+              Uma bela queda d'água de fácil acesso, perfeita para relaxar e
+              tirar fotos.
+            </p>
+          </div>
+
+          <!-- Bloco Fazenda Samambaia -->
+          <div class="card">
+            <img src="./img/fazenda-samambaia.jpg" alt="Entrada da Fazenda Samambaia" />
+            <h3>Fazenda Samambaia</h3>
+            <p>
+              Um local histórico com um restaurante renomado, unindo história e
+              alta gastronomia em um só lugar.
+            </p>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <!-- Informações sobre a página + Copyright + contatos + email + redes  -->
+    <p>Desenvolvido para a disciplina de Front-End.</p>
+    <p>Informações de Contato: (XX) XXXX-XXXX | <a class="mail" href="mailto:email@exemplo.com">email@exemplo.com</a>
+    </p>
+    <p>&copy; 2025 Turismo Petrópolis.</p>
+    <p>Todos os direitos reservados.</p>
+    <ul class="social-icons">
+      <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+            class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+            class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+            class="fab fa-twitter"></i></a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navegação suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base do html */
+body{
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #e1ecc6;
+  color: #333;
+}
+
+/*  Cabeçalho  */
+.main-header {
+  background-color: rgba(15, 42, 20, 0.7);
+  color: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.main-header nav ul {
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.main-header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  transform: translateY(-3px);
+}
+
+.main-header nav a:hover {
+  font-size: 1.4rem;
+  box-shadow: 0 5px 10px #2b4337;
+}
+
+/*  Home  */
+#home {
+  height: 100vh;
+  background-image: url("../img/quitandinha-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-text {
+  font-size: 100px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  background-color: rgba(15, 42, 20, 0.7);
+  padding: 5rem;
+  border-radius: 20px;
+}
+
+#home:hover .home-text {
+  opacity: 7;
+  transform: translateY(0);
+}
+
+.home-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-text p {
+  font-size: 1.5rem;
+}
+
+
+/*  Estilo padão para os blocos  */
+.content-section {
+  padding: 4rem 2rem;
+  max-width: 5000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid rgb(30, 157, 47);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgb(56, 90, 60);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.card p {
+  font-size: 1rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.content-section:last-child {
+  padding-bottom: 128px;
+}
+
+/* ---- Rodapé ---- */
+footer {
+  background-color: #283532;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 12px 0 0 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #091f0d;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  background: #d31111;
+  color: #ffffff;
+}
+
+.social-icons i {
+  font-size: 18px;
+}
+
+.mail {
+  color: white;
+}
+
+.mail:hover {
+  color: red;
+}
